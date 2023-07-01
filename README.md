@@ -16,9 +16,9 @@ This repository contains a Flask-based API that enables basic CRUD operations us
 ### Starting the API
 
 To start the Flask API, execute the following command:
-
+```shell
 python app.py
-
+```
 The API will start running on `http://localhost:5000`.
 
 ### Endpoints
@@ -38,15 +38,15 @@ This endpoint retrieves a list of users based on the specified filtering paramet
 - `age_min` and `age_max`: Filter users by age within the specified range
 
 Example usage:
-
+```shell
 GET /api/users?name=Raghav&city=Mumbai
-
+ ```
 #### POST /api/users
 
 This endpoint allows the creation of a new user by sending a JSON object containing the user's `name`, `age`, and `city` in the request body. If successful, the newly created user will be returned in the response.
 
 Example usage:
-
+ ```shell
 POST /api/users
 Content-Type: application/json
 
@@ -55,13 +55,13 @@ Content-Type: application/json
   "age": 30,
   "city": "New York"
 }
-
+```
 #### PUT /api/users/{user_id}
 
 This endpoint updates an existing user's information completely. Provide the `user_id` in the URL path and send a JSON object containing the updated user details in the request body, including the `name`, `age`, and `city`. If the user is found and the update is successful, the updated user information will be returned.
 
 Example usage:
-
+ ```shell
 PUT /api/users/1
 Content-Type: application/json
 
@@ -70,14 +70,14 @@ Content-Type: application/json
   "age": 35,
   "city": "Updated City"
 }
-
+```
 
 #### PATCH /api/users/{user_id}
 
 This endpoint allows partial updates to an existing user's information. Provide the `user_id` in the URL path and send a JSON object containing the fields to be updated in the request body. If the user is found and the update is successful, the updated user information will be returned.
 
 Example usage:
-
+ ```shell
 PATCH /api/users/1
 Content-Type: application/json
 
@@ -85,15 +85,15 @@ Content-Type: application/json
   "age": 40
 }
 
-
+```
 #### DELETE /api/users/{user_id}
 
 This endpoint deletes the specified user based on the provided `user_id` in the URL path. If the user is found and successfully deleted, a success message will be returned.
 
 Example usage:
-
+ ```shell
 DELETE /api/users/1
-
+```
 
 ## Contributions
 
