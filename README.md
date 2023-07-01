@@ -97,10 +97,10 @@ DELETE /api/users/1
 
 ## Test Cases
 
-The project includes test cases to validate the functionality of the API. To run the test cases, execute the following command:
+The project includes some test cases to validate the functionality of the API. To run the test cases, execute the following command:
 
  ```shell
-python test_api.py
+python testcases.py
 ```
 
 ## Contributions
