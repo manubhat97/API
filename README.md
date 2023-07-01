@@ -17,10 +17,7 @@ This repository contains a Flask-based API that enables basic CRUD operations us
 
 To start the Flask API, execute the following command:
 
-
-   ```shell
-   python app.py
-
+python app.py
 
 The API will start running on `http://localhost:5000`.
 
@@ -44,7 +41,6 @@ Example usage:
 
 GET /api/users?name=Raghav&city=Mumbai
 
-
 #### POST /api/users
 
 This endpoint allows the creation of a new user by sending a JSON object containing the user's `name`, `age`, and `city` in the request body. If successful, the newly created user will be returned in the response.
@@ -55,11 +51,10 @@ POST /api/users
 Content-Type: application/json
 
 {
-"name": "John Doe",
-"age": 30,
-"city": "New York"
+  "name": "John Doe",
+  "age": 30,
+  "city": "New York"
 }
-
 
 #### PUT /api/users/{user_id}
 
@@ -71,9 +66,9 @@ PUT /api/users/1
 Content-Type: application/json
 
 {
-"name": "Updated Name",
-"age": 35,
-"city": "Updated City"
+  "name": "Updated Name",
+  "age": 35,
+  "city": "Updated City"
 }
 
 
@@ -87,7 +82,7 @@ PATCH /api/users/1
 Content-Type: application/json
 
 {
-"age": 40
+  "age": 40
 }
 
 
