@@ -8,16 +8,16 @@ This repository contains a Flask-based API that enables basic CRUD operations us
 2. Install the required dependencies by running the following command:
 
 
-   ```shell
-   pip install -r requirements.txt
-
+```shell
+pip install -r requirements.txt
+```
 ## Usage
 
 ### Starting the API
 
 To start the Flask API, execute the following command:
 ```shell
-python app.py
+python main.py
 ```
 The API will start running on `http://localhost:5000`.
 
