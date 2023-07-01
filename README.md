@@ -95,6 +95,14 @@ Example usage:
 DELETE /api/users/1
 ```
 
+## Test Cases
+
+The project includes test cases to validate the functionality of the API. To run the test cases, execute the following command:
+
+ ```shell
+python test_api.py
+```
+
 ## Contributions
 
 Contributions to this project are welcome. If you encounter any issues or would like to suggest improvements, please create a new issue or submit a pull request.
